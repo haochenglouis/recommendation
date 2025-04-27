@@ -5,4 +5,4 @@ pandas
 flask
 scikit-surprise
 collections
-sentence_transformers
+sentence-transformers
