@@ -122,7 +122,7 @@ def hybrid_recommendation(username,user_rating_path,user_db,item_lists,item_embe
     algo = train_svd(user_rating_path)
     svd_recommend_book_ids = svd_recommend(algo,username,user_unrated_book_ids,k)
     content_recommend_book_ids = content_based_recommend(user_profile,item_lists,item_embeddings,user_unrated_book_ids,k)
-    final_hybrid_ranking = weighted_borda_count(svd_recommend_book_ids, content_recommend_book_ids,0.7,0.3,k)
+    final_hybrid_ranking = weighted_borda_count(svd_recommend_book_ids, content_recommend_book_ids,0.3,0.7,k)
     return final_hybrid_ranking
 
 
