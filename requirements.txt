@@ -3,6 +3,6 @@ numpy
 scikit-learn
 pandas
 flask
-surprise
+scikit-surprise
 collections
 sentence_transformers
