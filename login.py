@@ -42,7 +42,7 @@ def register(): ## Register new user and return book ids for new user to chose p
         else:
         # 创建新用户，默认 has_set_preferences 为 False
             user_db[username]['passwd'] = password
-            book_ids_for_chosen = return_books_random(item_lists)
+            book_ids_for_chosen = return_books_random(item_lists,k=30)
             return jsonify({
                 'success': True,
                 'message': 'User registered successfully',
