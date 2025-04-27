@@ -1,0 +1,8 @@
+torch
+numpy 
+scikit-learn
+pandas
+flask
+surprise
+collections
+sentence_transformers
